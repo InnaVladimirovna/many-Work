@@ -1,0 +1,67 @@
+.main{
+    margin: 0 auto;
+    width: 800px;
+}
+.main>img{
+    width: 100%;
+}
+.gelery{
+    margin: 0 auto;
+    width: 82%;
+}
+.gelery>img{
+    width:150px;
+    float: left;
+    margin: 7px;
+}
+.clear{
+    clear: both;
+}
+.gelery img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.buttons{
+    width: 600px;
+    margin: 0 20%;
+}
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px grey;
+}
+button:hover{
+    animation: hover 1s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes hover {
+    0%{
+        background: linear-gradient(145deg, rgb(54, 65, 63) 5%, white);
+    }
+    50%{
+        background: linear-gradient(145deg, rgb(54, 65, 63) 30%, white);
+    }
+    100%{
+        background: linear-gradient(145deg, rgb(54, 65, 63));
+        color: white;
+    }
+}
+.sepia{
+    filter: sepia(40%);
+}
+.invert{
+    filter: invert(85%);
+}
+.blur{
+    filter: blur(1.5px);
+}
+.saturate{
+    filter: saturate(300%);
+}
+.original{
+    filter: none;
+}
+.opacity{
+    filter: opacity(80%);
+}

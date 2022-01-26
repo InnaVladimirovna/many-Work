@@ -1,0 +1,27 @@
+.click{
+    position: fixed;
+    background: gray;
+    top: 0;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+a{
+    display: block;
+}
+.click img{
+    opacity: 0;
+    background: white;
+    padding: 10px;
+}
+.click:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+}
+.click:target img{
+    opacity: 1;
+}

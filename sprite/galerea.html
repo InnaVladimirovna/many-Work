@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/galerea.css">
+    <script>function change(photo){
+document.getElementById("main_photo").src=photo
+    }
+    function change_filter(my_class){
+    document.getElementById("main_photo").classList.remove('sepia','invert','blur','saturate','original','opasity');
+    document.getElementById("main_photo").classList.add(my_class);
+}
+    </script>
+</head>
+<body>
+    <div class="main"><img id="main_photo" src="img-galerea/dave-hoefler-PDfe7H5GJR0-unsplash.jpg" alt="forest">
+    <div class="gelery">
+        <img onclick="change(this.src)" src="img-galerea/dave-hoefler-PDfe7H5GJR0-unsplash.jpg" alt="">
+        <img onclick="change(this.src)" src="img-galerea/john-towner-3Kv48NS4WUU-unsplash.jpg" alt="">
+        <img onclick="change(this.src)" src="img-galerea/juan-davila-P8PlK2nGwqA-unsplash.jpg" alt="">
+        <img onclick="change(this.src)" src="img-galerea/veeterzy-sMQiL_2v4vs-unsplash.jpg" alt="">
+    </div>
+    <div class="clear"></div>
+    <div class="buttons">
+        <button onclick="change_filter('sepia')">sepia</button>
+        <button onclick="change_filter('invert')">invert</button>
+        <button onclick="change_filter('blur')">blur</button>
+        <button onclick="change_filter('saturate')">saturate</button>
+        <button onclick="change_filter('original')">original</button>
+        <button onclick="change_filter('opasity')">opasity</button>
+    </div>
+    </div>
+    
+</body>
+</html>

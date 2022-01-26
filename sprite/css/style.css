@@ -1,0 +1,70 @@
+.one{
+    width: 130px;
+    height: 130px;
+    background: url(../img/MicrosoftTeams-image\ \(1\).png) 0 0 no-repeat;
+    animation: one 5s steps(49) infinite;
+}
+@keyframes one{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -6370px 0;
+    }
+}
+.two{
+    height: 312px;
+    width: 820px;
+    background: url(../img/2.jpg) 0 0 no-repeat;
+    animation: two 3s steps(40) infinite;
+}
+@keyframes two {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -32800px 0;
+    }
+}
+.disc{
+   list-style: none;
+   width: 300px;
+   height: 250px;
+}
+.disc a{
+    color: green;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    background: transparent url(../img/btn-disc.png)  0 -125px no-repeat;
+    transition: background-position 0.5s linear;
+}
+.disc a:hover{
+    background-position: 0 40px;
+}
+.cat{
+    width: 400px;
+    height: 200px;
+    background: url(../img/tuna_sprite.png) 0 0 no-repeat;
+    animation: cat 3s steps(12), cat2 5s steps(12) infinite;
+}
+@keyframes cat {
+    from{
+        background-position: 0 0;
+        /* transform: translateX(800px); */
+    }
+    to{
+        background-position: 0 -2400px;
+        /* transform: translateX(-800px); */
+    } 
+}
+@keyframes cat2 {
+    from{
+background-position:-800px 0;
+    }
+    to{
+background-position: -800px -2400px;
+    }
+    
+}
